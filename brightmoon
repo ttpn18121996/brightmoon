@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+if (PHP_SAPI !== 'cli') {
+    echo 'brightmoon must be run as a CLI application';
+    exit(1);
+}
+
+$app = new BrightMoon\Console\Application($argv, $argc, __DIR__);
+$app->make()->handle();
+
+exit();

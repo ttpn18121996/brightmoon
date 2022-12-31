@@ -1,0 +1,21 @@
+{
+    "name": "brightmoon/brightmoon",
+    "description": "BrightMoon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trinh Tran Phuong Nam",
+            "email": "ttpn18121996@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "brightmoon/framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    }
+}
