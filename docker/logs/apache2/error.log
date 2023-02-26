@@ -1,2 +1,0 @@
-[Sat Dec 31 19:55:39.321670 2022] [mpm_event:notice] [pid 25:tid 140387897461696] AH00489: Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 configured -- resuming normal operations
-[Sat Dec 31 19:55:39.322532 2022] [core:notice] [pid 25:tid 140387897461696] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
