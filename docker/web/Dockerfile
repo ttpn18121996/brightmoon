@@ -5,7 +5,7 @@ ARG NODE_VERSION=19
 ARG POSTGRES_VERSION=15
 
 # Install packages
-RUN apt-get update && apt-get install -y sudo git curl zip unzip supervisor sqlite3 libcap2-bin libpng-dev python2 vim
+RUN apt-get update && apt-get install -y sudo git curl zip unzip supervisor sqlite3 libcap2-bin libpng-dev libpq-dev python2 vim
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && curl -sLS https://deb.nodesource.com/setup_$NODE_VERSION.x | bash - \

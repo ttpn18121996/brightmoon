@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 docker-compose down \
-&& docker container prune \
-&& docker image prune \
+&& docker container prune -f \
+&& docker image prune -f \
 && docker-compose up --detach --build
