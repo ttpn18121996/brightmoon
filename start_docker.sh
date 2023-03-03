@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-docker-compose up -d apache2 adminer mysql postgres
+docker-compose down \
+&& docker container prune \
+&& docker image prune \
+&& docker-compose up --detach --build
