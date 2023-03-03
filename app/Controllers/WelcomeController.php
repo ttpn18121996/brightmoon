@@ -16,7 +16,6 @@ class WelcomeController extends Controller
      */
     public function index(Request $request)
     {
-        dd(['data' => [1, 2]]);
-        return $this->view();
+        return $this->view(); // view('welcome.index')
     }
 }
