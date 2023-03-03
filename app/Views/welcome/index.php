@@ -1,28 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to BrightMoon</title>
-    <style>
-        * { margin: 0; padding: 0; font-size: 14px; }
-        ul { list-style-type: none; }
-        .container { width: 100vw; height: 100vh; position: relative; }
-        .block-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            height: 100%;
-        }
-        .block-title h1 { font-size: 3rem; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="block-title">
-            <h1>BrightMoon</h1>
-        </div>
+<?php View::extends('layouts.app') ?>
+
+<?php View::section('title', 'Welcome to BrightMoon') ?>
+
+<?php View::section('content') ?>
+    <div class="flex justify-center items-center flex-column">
+        <h1 class="text-5xl text-gray-500">BrightMoon</h1>
+        <ul class="flex justify-between gap-2">
+            <li>
+                <a href="https://github.com/ttpn18121996/brightmoon" target="_blank">Framework v5.1.2</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="https://github.com/ttpn18121996/framework" target="_blank">Core Framework v<?= app()->version() ?></a>
+            </li>
+            <li>|</li>
+            <li><span>PHP v<?= phpversion() ?></span></li>
+        </ul>
     </div>
-</body>
-</html>
+<?php View::endSection() ?>

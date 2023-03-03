@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ttpn18121996/framework.git",
-                "reference": "7f01626744b4717115972114b8daf023a2cd9474"
+                "reference": "7c6a0d652ede31169302b0dd090326ed7cb6c434"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ttpn18121996/framework/zipball/7f01626744b4717115972114b8daf023a2cd9474",
-                "reference": "7f01626744b4717115972114b8daf023a2cd9474",
+                "url": "https://api.github.com/repos/ttpn18121996/framework/zipball/7c6a0d652ede31169302b0dd090326ed7cb6c434",
+                "reference": "7c6a0d652ede31169302b0dd090326ed7cb6c434",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "issues": "https://github.com/ttpn18121996/framework/issues",
                 "source": "https://github.com/ttpn18121996/framework/tree/master"
             },
-            "time": "2023-03-03T04:53:30+00:00"
+            "time": "2023-03-03T09:16:17+00:00"
         },
         {
             "name": "graham-campbell/result-type",
