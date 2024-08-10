@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use BrightMoon\Controller;
 use BrightMoon\Http\Request;
-use BrightMoon\Http\Response;
 
 class WelcomeController extends Controller
 {
