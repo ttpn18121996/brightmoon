@@ -7,6 +7,7 @@ return [
     ],
     'dump' => [
         'theme' => 'dark',
+        'limit_level' => 10,
     ],
     'pagination' => [
         'per_page' => 10,

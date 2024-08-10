@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ! -z "$WWWUSER" ]; then
-    usermod -u $WWWUSER brightmoon
+    usermod -u $WWWUSER www-dev
 fi
 
 if [ ! -d /.composer ]; then
@@ -10,6 +10,13 @@ fi
 
 chmod -R ugo+rw /.composer
 
-apachectl -D FOREGROUND
+if [ ${ENABLE_SSL} == true ]; then
+    if [ -e /var/www/html/docker/web/certs/ssl.crt ]; then
+        mkdir -p /etc/apache2/ssl
+        cp /var/www/html/docker/web/certs/ssl.crt /etc/apache2/ssl/ssl.crt
+        cp /var/www/html/docker/web/certs/ssl.key /etc/apache2/ssl/ssl.key
+    fi
+    a2enmod ssl
+fi
 
-exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
